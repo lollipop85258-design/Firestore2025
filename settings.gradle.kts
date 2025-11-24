@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Firestore2025"
+rootProject.name = "FireStore"
 include(":app")
- 

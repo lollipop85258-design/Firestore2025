@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "tw.edu.pu.csim.tcyang.firestore2025"
+    namespace = "tw.edu.pu.csim.tcyang.firestore"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "tw.edu.pu.csim.tcyang.firestore2025"
+        applicationId = "tw.edu.pu.csim.tcyang.firestore"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -50,9 +50,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    implementation(libs.firebase.functions)
+    implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
-    implementation(libs.firebase.messaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -61,6 +60,5 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
 }
-
